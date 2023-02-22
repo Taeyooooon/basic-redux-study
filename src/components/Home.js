@@ -7,7 +7,6 @@ const Home = () => {
   const [text, setText] = useState('');
   const toDos = useSelector((state) => state);
   const dispatch = useDispatch();
-  console.log('todo : ', toDos);
 
   const onChange = (e) => {
     setText(e.target.value);
